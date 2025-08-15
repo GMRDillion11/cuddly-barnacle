@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Faculty of Computing - Agama University</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      color: white;
+      background: linear-gradient(135deg, #002b5c, #00509e, #ffd700);
+      background-size: 300% 300%;
+      animation: bgMove 12s ease infinite;
+    }
+
+    @keyframes bgMove {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+
+    header {
+      background-color: rgba(0, 43, 92, 0.95);
+      text-align: center;
+      padding: 25px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.4);
+    }
+
+    header h1 {
+      font-size: 2.3em;
+      color: #ffd700;
+      margin-bottom: 5px;
+    }
+
+    header p {
+      font-size: 1.1em;
+      color: #e0e0e0;
+    }
+
+    nav {
+      background-color: #ffd700;
+      text-align: center;
+      padding: 12px;
+    }
+
+    nav a {
+      margin: 0 15px;
+      color: #002b5c;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 1.05em;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: #000;
+      text-decoration: underline;
+    }
+
+    .content {
+      text-align: center;
+      padding: 60px 20px;
+      background-color: rgba(0, 0, 0, 0.35);
+      border-radius: 15px;
+      max-width: 900px;
+      margin: 50px auto;
+      box-shadow: 0 8px 18px rgba(0,0,0,0.5);
+    }
+
+    .content h2 {
+      font-size: 2em;
+      color: #ffd700;
+      margin-bottom: 15px;
+    }
+
+    .content p {
+      font-size: 1.15em;
+      max-width: 750px;
+      margin: auto;
+      color: #f0f0f0;
+    }
+
+    .program-links {
+      margin-top: 35px;
+    }
+
+    .program-links a {
+      display: inline-block;
+      margin: 12px;
+      padding: 12px 25px;
+      background-color: #ffd700;
+      color: #002b5c;
+      font-weight: bold;
+      border-radius: 10px;
+      text-decoration: none;
+      transition: transform 0.3s, background-color 0.3s;
+      box-shadow: 0 5px 12px rgba(0,0,0,0.4);
+    }
+
+    .program-links a:hover {
+      transform: scale(1.08);
+      background-color: #ffcc33;
+    }
+
+    footer {
+      background-color: rgba(0, 43, 92, 0.95);
+      text-align: center;
+      padding: 18px;
+      margin-top: 60px;
+      font-size: 0.9em;
+      box-shadow: 0 -4px 10px rgba(0,0,0,0.3);
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Faculty of Computing</h1>
+    <p>Agama University</p>
+  </header>
+
+  <nav>
+    <a href="Homepage.html">Home</a>
+    <a href="Cyber.html">Cyber Security</a>
+    <a href="Soft.html">Software Engineering</a>
+  </nav>
+
+  <div class="content">
+    <h2>Welcome to the Faculty of Computing</h2>
+    <p>Our Faculty offers cutting-edge programs in Computer Science, Cyber Security, Data Science, Software Engineering, and Information Technology. We prepare students to excel in the evolving world of technology.</p>
+
+    <div class="program-links">
+      <a href="Cyber.html">Cyber Security</a>
+      <a href="Soft.html">Software Engineering</a>
+      <a href="data.html">Data Science</a>
+      <a href="cs.html">Computer Science</a>
+      <a href="it.html">Information Technology</a>
+    </div>
+  </div>
+
+  <footer>
+    &copy; 2025 Agama University — Faculty of Computing
+  </footer>
+
+</body>
+</html>

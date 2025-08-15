@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Student Portal - Agama University</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      color: #fff;
+      background: linear-gradient(135deg, #002b5c, #00509e, #ffd700);
+      background-size: 300% 300%;
+      animation: gradientMove 12s ease infinite;
+    }
+
+    @keyframes gradientMove {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+
+    header {
+      background-color: rgba(0, 43, 92, 0.95);
+      padding: 25px;
+      text-align: center;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+    }
+
+    header h1 {
+      font-size: 2.5em;
+      color: #ffd700;
+      margin-bottom: 5px;
+    }
+
+    header p {
+      font-size: 1.1em;
+      color: #d4d4d4;
+    }
+
+    nav {
+      background-color: #ffd700;
+      text-align: center;
+      padding: 12px;
+    }
+
+    nav a {
+      color: #002b5c;
+      font-weight: bold;
+      text-decoration: none;
+      margin: 0 15px;
+      font-size: 1.1em;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    .login-container {
+      max-width: 500px;
+      margin: 70px auto;
+      padding: 40px;
+      background: rgba(0,0,0,0.5);
+      border-radius: 15px;
+      box-shadow: 0 8px 15px rgba(0,0,0,0.5);
+    }
+
+    .login-container h2 {
+      color: #ffd700;
+      font-size: 1.8em;
+      margin-bottom: 25px;
+    }
+
+    input {
+      width: 100%;
+      padding: 14px;
+      margin: 12px 0;
+      border: none;
+      border-radius: 8px;
+      font-size: 1em;
+      outline: none;
+    }
+
+    input:focus {
+      border: 2px solid #ffd700;
+    }
+
+    button {
+      width: 100%;
+      padding: 14px;
+      background-color: #ffd700;
+      color: #002b5c;
+      font-weight: bold;
+      font-size: 1.1em;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: 0.3s ease;
+    }
+
+    button:hover {
+      background-color: #ffcc33;
+      transform: scale(1.03);
+    }
+
+    footer {
+      background-color: rgba(0, 43, 92, 0.95);
+      text-align: center;
+      padding: 15px;
+      margin-top: 60px;
+      font-size: 0.9em;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Student Portal</h1>
+    <p>Agama University</p>
+  </header>
+
+  <div class="login-container">
+    <h2>Login to Your Account</h2>
+    <form id="loginForm">
+      <input type="text" placeholder="Full Name" required>
+      <input type="text" placeholder="Matric Number" required>
+      <input type="text" placeholder="Level (e.g., 100, 200)" required>
+      <button type="submit">Login</button>
+    </form>
+  </div>
+
+  <footer>
+    &copy; 2025 Agama University — Student Portal
+  </footer>
+
+  <script>
+    document.getElementById("loginForm").addEventListener("submit", function(e) {
+      e.preventDefault(); // stop normal form submit
+      window.location.href = "Homepage.html"; // redirect to homepage
+    });
+  </script>
+
+</body>
+</html>

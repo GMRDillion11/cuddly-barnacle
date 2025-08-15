@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Software Engineering - Agama University</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      color: white;
+      background: linear-gradient(135deg, #002b5c, #00509e, #ffd700);
+      background-size: 300% 300%;
+      animation: bgMove 12s ease infinite;
+    }
+
+    @keyframes bgMove {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+
+    header {
+      background-color: rgba(0, 43, 92, 0.95);
+      text-align: center;
+      padding: 25px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.4);
+    }
+
+    header h1 {
+      font-size: 2.3em;
+      color: #ffd700;
+      margin-bottom: 5px;
+    }
+
+    header p {
+      font-size: 1.1em;
+      color: #e0e0e0;
+    }
+
+    nav {
+      background-color: #ffd700;
+      text-align: center;
+      padding: 12px;
+    }
+
+    nav a {
+      margin: 0 15px;
+      color: #002b5c;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 1.05em;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: #000;
+      text-decoration: underline;
+    }
+
+    .container {
+      padding: 50px 20px;
+      text-align: center;
+      max-width: 900px;
+      margin: auto;
+      background-color: rgba(0, 0, 0, 0.35);
+      border-radius: 15px;
+      box-shadow: 0 8px 18px rgba(0,0,0,0.5);
+    }
+
+    h2 {
+      font-size: 2em;
+      color: #ffd700;
+      margin-bottom: 15px;
+    }
+
+    .fees {
+      background-color: rgba(255, 255, 255, 0.1);
+      margin-top: 30px;
+      padding: 25px;
+      border-radius: 12px;
+    }
+
+    .fees h3 {
+      color: #ffd700;
+      margin-bottom: 15px;
+    }
+
+    .fees p {
+      font-size: 1.15em;
+      margin: 8px 0;
+      color: #f0f0f0;
+    }
+
+    .fees button {
+      padding: 12px 25px;
+      margin: 10px;
+      background: #ffd700;
+      color: #002b5c;
+      border: none;
+      border-radius: 8px;
+      font-weight: bold;
+      cursor: pointer;
+      transition: transform 0.3s, background-color 0.3s;
+      box-shadow: 0 5px 12px rgba(0,0,0,0.4);
+    }
+
+    .fees button:hover {
+      transform: scale(1.08);
+      background-color: #ffcc33;
+    }
+
+    footer {
+      background-color: rgba(0, 43, 92, 0.95);
+      text-align: center;
+      padding: 18px;
+      margin-top: 50px;
+      font-size: 0.9em;
+      box-shadow: 0 -4px 10px rgba(0,0,0,0.3);
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Software Engineering</h1>
+    <p>Faculty of Computing - Chigozie University</p>
+  </header>
+
+  <nav>
+    <a href="Computing.html">Computing</a>
+    <a href="Soft.html">Software Engineering</a>
+  </nav>
+
+  <div class="container">
+    <h2>Welcome to the Department of Software Engineering</h2>
+    <p>Learn to design, build, and maintain complex software systems for the modern world.</p>
+
+    <div class="fees">
+      <h3>School Fees</h3>
+      <p><strong>Indigene:</strong> ₦189,000</p>
+      <p><strong>Non-Indigene:</strong> ₦330,000</p>
+
+      <h3>Pay Now</h3>
+      <button>Pay as Indigene</button>
+      <button>Pay as Non-Indigene</button>
+    </div>
+  </div>
+
+  <footer>
+    &copy; 2025 Agama University — Software Engineering Department
+  </footer>
+
+</body>
+</html>
