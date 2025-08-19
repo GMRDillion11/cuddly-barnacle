@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Agama University</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      color: #fff;
+      background: linear-gradient(135deg, #002b5c, #00509e, #ffd700);
+      background-size: 300% 300%;
+      animation: bgMove 12s ease infinite;
+    }
+
+    @keyframes bgMove {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+
+    header {
+      background-color: rgba(0, 43, 92, 0.95);
+      text-align: center;
+      padding: 25px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.4);
+    }
+
+    header img {
+      width: 110px;
+      height: auto;
+      border-radius: 50%;
+      border: 3px solid #ffd700;
+    }
+
+    header h1 {
+      margin: 10px 0 5px;
+      font-size: 2.5em;
+      color: #ffd700;
+    }
+
+    header p {
+      color: #e0e0e0;
+      font-size: 1.1em;
+    }
+
+    nav {
+      background-color: #ffd700;
+      display: flex;
+      justify-content: center;
+      padding: 12px;
+      flex-wrap: wrap;
+    }
+
+    nav a {
+      margin: 8px 18px;
+      text-decoration: none;
+      font-weight: bold;
+      color: #002b5c;
+      font-size: 1.1em;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: #000;
+      text-decoration: underline;
+    }
+
+    .content {
+      text-align: center;
+      padding: 70px 20px;
+      background-color: rgba(0, 0, 0, 0.3);
+      border-radius: 15px;
+      max-width: 900px;
+      margin: 50px auto;
+      box-shadow: 0 8px 18px rgba(0,0,0,0.5);
+    }
+
+    .content h2 {
+      font-size: 2.2em;
+      color: #ffd700;
+    }
+
+    .content p {
+      font-size: 1.15em;
+      max-width: 700px;
+      margin: 20px auto;
+      color: #f0f0f0;
+    }
+
+    .faculties {
+      margin-top: 40px;
+    }
+
+    .faculties a {
+      display: inline-block;
+      margin: 15px;
+      padding: 15px 30px;
+      background-color: #ffd700;
+      color: #002b5c;
+      border-radius: 12px;
+      text-decoration: none;
+      font-size: 1.1em;
+      font-weight: bold;
+      transition: transform 0.3s, background-color 0.3s;
+      box-shadow: 0 5px 12px rgba(0,0,0,0.4);
+    }
+
+    .faculties a:hover {
+      transform: scale(1.08);
+      background-color: #ffcc33;
+    }
+
+    footer {
+      background-color: rgba(0, 43, 92, 0.95);
+      text-align: center;
+      padding: 18px;
+      color: white;
+      margin-top: 60px;
+      font-size: 0.9em;
+      box-shadow: 0 -4px 10px rgba(0,0,0,0.3);
+    }
+
+    /* Scroll-to-top button */
+    #scrollTopBtn {
+      position: fixed;
+      bottom: 30px;
+      right: 30px;
+      z-index: 100;
+      background: linear-gradient(135deg, #ffd700, #ffcc33);
+      color: #002b5c;
+      border: none;
+      border-radius: 50%;
+      width: 55px;
+      height: 55px;
+      font-size: 26px;
+      font-weight: bold;
+      cursor: pointer;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.4);
+      display: none;
+      transition: background-color 0.3s ease;
+    }
+
+    #scrollTopBtn:hover {
+      background: linear-gradient(135deg, #ffdb4d, #ffd700);
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <img src="pic.png" alt="Agama University Logo">
+    <h1>Agama University</h1>
+    <p>The Future Begins Here</p>
+  </header>
+
+  <nav>
+    <a href="Homepage.html">Home</a>
+    <a href="Science.html">Faculty of Science</a>
+    <a href="Computing.html">Faculty of Computing</a>
+    <a href="About.html">About</a>
+    <a href="Contact.html">Contact</a>
+  </nav>
+  
+  <div class="content">
+    <h2>Welcome to Agama University</h2>
+    <p>At Agama University, we provide quality education that empowers students with the knowledge and skills to excel in science, computing, and beyond. Our mission is to prepare leaders who will shape the future.</p>
+
+    <div class="faculties">
+      <a href="Science.html">Faculty of Science</a>
+      <a href="Computing.html">Faculty of Computing</a>
+      <a href="About.html">About Us</a>
+      <a href="Contact.html">Contact</a>
+    </div>
+  </div>
+
+  <footer>
+    &copy; 2025 Agama University | All rights reserved.
+  </footer>
+
+  <!-- Scroll to Top Button -->
+  <button onclick="scrollToTop()" id="scrollTopBtn">⬆</button>
+
+  <script>
+    const scrollBtn = document.getElementById("scrollTopBtn");
+
+    window.onscroll = function() {
+      if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+        scrollBtn.style.display = "block";
+      } else {
+        scrollBtn.style.display = "none";
+      }
+    };
+
+    function scrollToTop() {
+      window.scrollTo({
+        top: 0,
+        behavior: "smooth"
+      });
+    }
+  </script>
+
+</body>
+</html>
